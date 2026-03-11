@@ -46,7 +46,7 @@ describe('Catalogo de livros do HUB de Leitura', () => {
         cy.contains('Email já cadastrado')
     })
 
-    it.only('Deve registrar um usuário - usando AppAction', () => {
+    it('Deve registrar um usuário - usando AppAction', () => {
         cy.registrarUsuario().then((email) => {
             cy.log(email)
         })
